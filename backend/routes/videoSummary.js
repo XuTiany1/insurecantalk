@@ -1,6 +1,6 @@
 const express = require("express");
 
-const {landingFunction, getSummary, postVideo} = require("../controllers/videoSummary");
+const {landingFunction, getSummary, postVideo,postUserInfo} = require("../controllers/videoSummary");
 
 // import {
 //     landingFunction,
@@ -17,6 +17,7 @@ router.get("/getSummary/:id", getSummary);
   
 /* POST */
 router.post("/postVideo", postVideo);
+router.post("/userInfo", postUserInfo);
 
 
 module.exports = router

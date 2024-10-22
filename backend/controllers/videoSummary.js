@@ -48,6 +48,10 @@ const landingFunction = async(req, res, next) => {
 /* READ */
 const getSummary = async(req, res, next) => {
 
+
+     console.log("received the request");
+
+
     mongoose.connect(mongodatabaseURL, { useNewUrlParser: true})
     .then(() => {
         console.log("DATABASEE connected");
@@ -79,6 +83,17 @@ const getSummary = async(req, res, next) => {
 
 
 /* POST */
+const postUserInfo = async(req, res, next) => {
+
+    console.log("Received the request");
+
+    console.log(req.body)
+
+    res.send({"result":"accepted"}).status(200);
+
+}
+
+
 const postVideo = async(req, res, next) => {
 
     const youtubeURL = req.body.youtube_url;
@@ -335,7 +350,7 @@ const postVideo = async(req, res, next) => {
 
 
 // Exporting the functions from controller to the router
-module.exports = {landingFunction, getSummary, postVideo}
+module.exports = {landingFunction, getSummary, postVideo, postUserInfo}
 
 
 
