@@ -3,6 +3,5 @@
 FrontEnd: 
 	Install dependencies:
 	npm install
-
-	Start application:
+ 	Start application:
 	npm run dev
