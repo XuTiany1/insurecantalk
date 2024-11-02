@@ -25,6 +25,10 @@ var databaseConnection = "Waiting for Database response...";
 
 /* DEFAULT */
 const landingFunction = async(req, res, next) => {
+
+    console.log("Using the default landingFuntion");
+
+
     try{
         // Connect to database
         mongoose.connect(mongodatabaseURL, { useNewUrlParser: true})
@@ -37,7 +41,7 @@ const landingFunction = async(req, res, next) => {
             databaseConnection = "Error connecting to Database";
         });
 
-        res.send(databaseConnection);
+        res.send(databaseConnection).status(200);
 
     } catch (err){
         res.send("error!")
