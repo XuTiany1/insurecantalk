@@ -1,6 +1,6 @@
 const express = require("express");
 
-const {landingFunction, postUserInfo} = require("../controllers/accountServiceController");
+const {landingFunction, postUserInfo, getUserInfo, deleteUserInfo} = require("../controllers/accountServiceController");
 
   
 const router = express.Router();
@@ -8,8 +8,10 @@ const router = express.Router();
 /* READ */
 router.get("/", landingFunction);
   
-/* POST */
+/* User Info */
 router.post("/userInfo", postUserInfo);
+router.get("/userInfo", getUserInfo);
+router.delete("/userInfo", deleteUserInfo);
 
 
 module.exports = router
