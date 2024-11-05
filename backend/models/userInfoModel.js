@@ -13,7 +13,7 @@ const userInfoSchema = new Schema({
     type: String,
     required: false  
   },
-  answerToSurvey: {
+  question1: {
     type: String,
     required: false  
   }

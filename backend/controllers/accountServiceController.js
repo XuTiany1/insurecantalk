@@ -71,7 +71,8 @@ const postUserInfo = async(req, res, next) => {
 
     const currUserInfo = new UserInfo({
                     userName: req.body.userName,
-                    userEmail: req.body.userEmail
+                    userEmail: req.body.userEmail,
+                    question1: req.body.question1
                 });
 
 
