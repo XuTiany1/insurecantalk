@@ -9,15 +9,51 @@
   <body>
     <div id="app"></div>
     <script type="module" src="/main.js"></script>
-    <script type="text/javascript">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script type="module">
+      import { DisableInputExtension,
+                VideoExtension,
+                TimerExtension,
+                FormExtension,
+                MapExtension,
+                FileUploadExtension,
+                KBUploadExtension,
+                DateExtension,
+                ConfettiExtension,
+                FeedbackExtension } from '/extensions.js';
+
       (function(d, t) {
           var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
           v.onload = function() {
             window.voiceflow.chat.load({
-              verify: { projectID: '672b17811891ba0bf93f7b5c' },
-              url: 'https://general-runtime.voiceflow.com',
-              versionID: 'production'
-            });
+            verify: { projectID: '672b17811891ba0bf93f7b5c' }, //insurecanTalk
+            //verify: { projectID: '66c367ef77162a334f4bf64f' }, // Demo origin
+            //verify: { projectID: '67392ea7b70f142a7a42ec86' }, // copy from demo 
+            url: 'https://general-runtime.voiceflow.com',
+            versionID: 'development',
+            user: {
+              name: 'Demo User',
+            },
+            render: {
+              mode: 'overlay',
+            },
+            autostart: true,
+            allowDangerousHTML: true,
+            assistant: {
+              extensions: [
+                DisableInputExtension,
+                VideoExtension,
+                TimerExtension,
+                FormExtension,
+                MapExtension,
+                FileUploadExtension,
+                KBUploadExtension,
+                DateExtension,
+                ConfettiExtension,
+                FeedbackExtension,
+              ],
+            },
+          });
           }
           v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
       })(document, 'script');
