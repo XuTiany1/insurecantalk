@@ -138,9 +138,70 @@ export const FormExtension = {
 
           <label for="email">Email</label>
           <input type="email" class="email" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Invalid email address"><br><br>
+       
+          <label>1. 您是否愿意通过互联网直接购买以下类型的保险？（可多选）</label>
+          <div class="checkbox-group">
+            <label><input type="checkbox" name="factors" value="价格"> A) 车险</label><br>
+            <label><input type="checkbox" name="factors" value="房屋保险"> B) 房屋保险</label><br>
+            <label><input type="checkbox" name="factors" value="人寿保险"> C) 人寿保险</label><br>
+            <label><input type="checkbox" name="factors" value="健康保险"> D) 健康保险</label><br>
+            <label><input type="checkbox" name="factors" value="旅游保险"> E) 旅游保险</label><br>
+            <label><input type="checkbox" name="factors" value="其他"> F) 其他</label><br>
+            <label><input type="checkbox" name="factors" value="我不接受通过互联网购买保险"> G) 我不接受通过互联网购买保险</label><br>
+          </div>
 
-          <label for="phone">Phone Number</label>
-          <input type="tel" class="phone" name="phone" required pattern="\\d+" title="Invalid phone number, please enter only numbers"><br><br>
+          <label>2. 您在选择保险产品时最关心的因素是什么？（可多选）</label>
+          <div class="checkbox-group">
+            <label><input type="checkbox" name="factors" value="价格"> A) 价格</label><br>
+            <label><input type="checkbox" name="factors" value="保障范围"> B) 保障范围</label><br>
+            <label><input type="checkbox" name="factors" value="理赔速度"> C) 理赔速度</label><br>
+            <label><input type="checkbox" name="factors" value="保险公司的信誉"> D) 保险公司的信誉</label><br>
+            <label><input type="checkbox" name="factors" value="客户服务"> E) 客户服务</label><br>
+            <label><input type="checkbox" name="factors" value="是否提供母语服务"> F) 是否提供母语服务（如普通话等)</label><br>
+          </div>
+
+          <label>3. 您通常通过哪种方式购买保险？（可多选）</label>
+          <div class="checkbox-group">
+            <label><input type="checkbox" name="factors" value="通过保险代理/经纪人面对面购买"> A) 通过保险代理/经纪人面对面购买</label><br>
+            <label><input type="checkbox" name="factors" value="通过电话联系保险经纪人购买"> B) 通过电话联系保险经纪人购买</label><br>
+            <label><input type="checkbox" name="factors" value="通过互联网直接购买"> C) 通过互联网直接购买（如官网或应用）</label><br>
+            <label><input type="checkbox" name="factors" value="比较网站或平台"> D) 比较网站或平台</label><br>
+            <label><input type="checkbox" name="factors" value="其他方式"> E) 其他方式（请注明）</label><br>
+          </div>
+
+          <label>4. 在您过去的保险购买过程中，有哪些方面您希望能够改进？（可多选）</label>
+          <div class="checkbox-group">
+            <label><input type="checkbox" name="factors" value="保费价格透明度"> A) 保费价格透明度</label><br>
+            <label><input type="checkbox" name="factors" value="申请与理赔流程的简化"> B) 申请与理赔流程的简化</label><br>
+            <label><input type="checkbox" name="factors" value="客户服务的满意度"> C) 客户服务的满意度</label><br>
+            <label><input type="checkbox" name="factors" value="更灵活的保障选择"> D) 更灵活的保障选择</label><br>
+            <label><input type="checkbox" name="factors" value="是否提供母语服务"> E) 是否提供母语服务</label><br>
+            <label><input type="checkbox" name="factors" value="其他"> F) 其他（请注明）</label><br>
+          </div>
+
+          <label>5. 您希望AI在保险受理的哪个环节提供帮助？（可多选）</label>
+          <div class="checkbox-group">
+            <label><input type="checkbox" name="factors" value="为我推荐适合的保险产品"> A) 为我推荐适合的保险产品</label><br>
+            <label><input type="checkbox" name="factors" value="协助帮助填写和提交申请表"> B) 协助帮助填写和提交申请表</label><br>
+            <label><input type="checkbox" name="factors" value="在线实时回答个性化的保险条款及服务问题"> C) 在线实时回答个性化的保险条款及服务问题</label><br>
+            <label><input type="checkbox" name="factors" value="协助撰写，申请和跟踪理赔"> D) 协助撰写，申请和跟踪理赔</label><br>
+            <label><input type="checkbox" name="factors" value="提供保单更新和优化建议"> E) 提供保单更新和优化建议</label><br>
+            <label><input type="checkbox" name="factors" value="其他"> F) 其他（请注明）</label><br>
+          </div>
+
+          <label>6. 您是否愿意通过互联网直接购买以下类型的保险？（可多选）</label>
+          <div class="checkbox-group">
+            <label><input type="checkbox" name="factors" value="定期保单检查与优化建议"> A) 定期保单检查与优化建议</label><br>
+            <label><input type="checkbox" name="factors" value="理赔流程指导与协助"> B) 理赔流程指导与协助</label><br>
+            <label><input type="checkbox" name="factors" value="个性化保险产品推荐"> C) 个性化保险产品推荐</label><br>
+            <label><input type="checkbox" name="factors" value="投保后的客户跟踪服务"> D) 投保后的客户跟踪服务</label><br>
+            <label><input type="checkbox" name="factors" value="市场新产品和优惠的通知"> E) 市场新产品和优惠的通知</label><br>
+            <label><input type="checkbox" name="factors" value="保险相关的法律和税务咨询"> F) 保险相关的法律和税务咨询</label><br>
+            <label><input type="checkbox" name="factors" value="健康、财务规划等增值服务"> G) 健康、财务规划等增值服务</label><br>
+            <label><input type="checkbox" name="factors" value="24/7 在线咨询和客户支持"> H) 24/7 在线咨询和客户支持</label><br>
+            <label><input type="checkbox" name="factors" value="其他"> I) 其他</label><br>
+            
+          </div>
 
           <input type="submit" class="submit" value="Submit">
         `
@@ -150,16 +211,13 @@ export const FormExtension = {
 
       const name = formContainer.querySelector('.name')
       const email = formContainer.querySelector('.email')
-      const phone = formContainer.querySelector('.phone')
 
       if (
         !name.checkValidity() ||
-        !email.checkValidity() ||
-        !phone.checkValidity()
+        !email.checkValidity() 
       ) {
         name.classList.add('invalid')
         email.classList.add('invalid')
-        phone.classList.add('invalid')
         return
       }
 
@@ -167,7 +225,7 @@ export const FormExtension = {
 
       window.voiceflow.chat.interact({
         type: 'complete',
-        payload: { name: name.value, email: email.value, phone: phone.value },
+        payload: { name: name.value, email: email.value },
       })
     })
 
