@@ -11,16 +11,9 @@
     <script type="module" src="/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
     <script type="module">
-      import { DisableInputExtension,
-                VideoExtension,
-                TimerExtension,
-                FormExtension,
-                MapExtension,
-                FileUploadExtension,
-                KBUploadExtension,
-                DateExtension,
-                ConfettiExtension,
-                FeedbackExtension } from '/extensions.js';
+      import { 
+                FormExtension
+                 } from '/extensions.js';
 
       (function(d, t) {
           var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
@@ -39,16 +32,7 @@
             allowDangerousHTML: true,
             assistant: {
               extensions: [
-                DisableInputExtension,
-                VideoExtension,
-                TimerExtension,
-                FormExtension,
-                MapExtension,
-                FileUploadExtension,
-                KBUploadExtension,
-                DateExtension,
-                ConfettiExtension,
-                FeedbackExtension,
+                FormExtension
               ],
             },
           });
